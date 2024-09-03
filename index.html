@@ -33,203 +33,287 @@
   <meta name="twitter:description" content="Galeria com imagens de autocolantes políticos relacionados com o 25 de Abril de 1974 e anos seguintes. Imagens disponibilizadas gratuitamente e sem restrições.">
   <meta name="twitter:image" content="images/card.png">
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">  
-  <link rel="stylesheet" href="css/lightbox.css">
+  <!--Import Google Font-->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 
-  
-    <!--Import Google Font-->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+  <link rel="stylesheet" href="css/lightbox.css">
+  <link rel="stylesheet" href="css/fix.css">
 
 </head>
 <body>
+  <div class="fixed-action-btn"><a href="#" data-target="nav-mobile" class="right show-on-large sidenav-trigger black-text"><i class="material-icons">menu</i></a></div>
 
-  <nav class="navbar bg-body-tertiary fixed-top bg-transparent"   style="background-color: transparent !important;">
-    <div class="container-fluid bg-transparent">
-      <a class="navbar-brand" href="#"></a>
-      <button class="bg-light navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>      
-      </button>
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-        <div class="offcanvas-header">  
-          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Galeria de Autocolantes da Revolução de Abril</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
+      <ul id="nav-mobile" class="sidenav sidenavbg">
+        <li id="sidenavtitle" class="row"><p class="col s12">Galeria de Autocolantes da Revolução de Abril</p></li>
+        <li><ul class="collapsible black-text">
+          <li>
+            <div class="collapsible-header waves-effect"><i class="material-icons"><img src="images/favicon.svg"></i>Porquê?</div>
+            <div class="collapsible-body white">
+              <p class="col s12 my-collapsible-body">Este projeto surgiu da vontade de contribuir para a preservação da memória da revolução portuguesa e divulgação da sua iconografia.</p>
+              <p class="col s12 my-collapsible-body">Sabemos que existem galerias similares mas esta é uma das que disponibiliza imagens com maior resolução e a única que disponibiliza as imagens para uso totalmente livre.</p>
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header waves-effect"><i class="material-icons red-text text-darken-2">construction</i>Como usar?</div>
+            <div class="collapsible-body  white">
+              <p class="col s12 my-collapsible-body">Pode utilizar as categorias existentes no topo da página para filtrar. Para visualizar clique em cima da imagem. Em todos os autocolantes existe um link para descarregar uma versão com a melhor qualidade disponível.</p>
+              <p class="col s12 my-collapsible-body">Se tiver algums dificuldade, recarregue a página ;) </p> 
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header waves-effect"><i class="material-icons red-text text-darken-2">volunteer_activism</i>Direitos de Autor e Licenças</div>
+            <div class="collapsible-body  white">
+              <p class="col s12 my-collapsible-body" xmlns:cc="http://creativecommons.org/ns#">
+              Estas imagens são partilhadas sob licença <a href="https://creativecommons.org/publicdomain/zero/1.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC0 1.0 Universal<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/zero.svg?ref=chooser-v1" alt=""></a></p>
+              <p class="col s12 my-collapsible-body">Isto significa que pode copiar, modificar, distribuir e executar o trabalho, mesmo para fins comerciais, tudo sem pedir autorização.</p>
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header waves-effect"><i class="material-icons red-text text-darken-2">people</i>Quem fez?</div>
+            <div class="collapsible-body  white">
+              <p class="col s12 my-collapsible-body">Os autocolantes foram recolhidos por Manuela Gonçalves e Nélson Gonçalves. O projeto foi desenvolvido e é mantido pela equipa do <a href="https://alfobre.com" target="_blank">Alfobre.com</a>.</p>
+              <p class="col s12 my-collapsible-body">Para dúvidas, contributos ou quaisquer outras questões, contacte-nos através de projeto.alfobre@gmail.com</p>
+            </div>
+          </li>
+        </ul></li>
+      </ul>
+
+      
+  <header>
+  <div class="row">
+          <!-- multifilter controls -->
+        <div class="col s11">                  
+          <ul class="multifilter">
+          <li class="tag-btn fltr-controls" data-filter="all">Ver Todos</li>
+        </ul>
+          <ul class="multifilter">
+            <li class="tag-title" >Local</li>
+            <li class="tag-btn fltr-controls" data-filter="portugal">Portugal</li>
+            <li class="tag-btn fltr-controls" data-filter="alenquer">Alenquer</li>
+            <li class="tag-btn fltr-controls" data-filter="almada">Almada</li> 
+            <li class="tag-btn fltr-controls" data-filter="alverca">Alverca</li>
+            <li class="tag-btn fltr-controls" data-filter="amadora">Amadora</li>            
+            <li class="tag-btn fltr-controls" data-filter="barreiro">Barreiro</li>
+            <li class="tag-btn fltr-controls" data-filter="beja">Beja</li>
+            <li class="tag-btn fltr-controls" data-filter="castelobranco">Castelo Branco</li>
+            <li class="tag-btn fltr-controls" data-filter="coimbra">Coimbra</li>
+            <li class="tag-btn fltr-controls" data-filter="espinho">Espinho</li>            
+            <li class="tag-btn fltr-controls" data-filter="lisboa">Lisboa</li>
+            <li class="tag-btn fltr-controls" data-filter="lourinha">Lourinhã</li>            
+            <li class="tag-btn fltr-controls" data-filter="odivelas">Odivelas</li>
+            <li class="tag-btn fltr-controls" data-filter="oeiras">Oeiras</li>  
+            <li class="tag-btn fltr-controls" data-filter="povoavarzim">Póvoa de Varzim</li>                      
+            <li class="tag-btn fltr-controls" data-filter="seixal">Seixal</li>
+            <li class="tag-btn fltr-controls" data-filter="setubal">Setúbal</li>
+            <li class="tag-btn fltr-controls" data-filter="sintra">Sintra</li>
+            <li class="tag-btn fltr-controls" data-filter="sobralma">Sobral de Monte Agraço</li>
+            <li class="tag-btn fltr-controls" data-filter="tvedras">Torres Vedras</li>
+            <li class="tag-btn fltr-controls" data-filter="vfxira">Vila Franca de Xira</li>
+            <li class="tag-btn fltr-controls" data-filter="semlocal">Sem Local</li>
+          </ul>
+
+          <ul class="multifilter">
+            <li class="tag-title" >Organização</li>
+            <li class="tag-btn btn-pav fltr-controls" data-filter="pcp">PCP</li>
+            <li class="tag-btn btn-pav fltr-controls" data-filter="cgtp">CGTP</li>
+            <li class="tag-btn btn-pav fltr-controls" data-filter="ujc">UJC</li>
+            <li class="tag-btn btn-pav fltr-controls" data-filter="pioneiros">Pioneiros</li> 
+            <li class="tag-btn btn-pav fltr-controls" data-filter="uec">UEC</li> 
+            <li class="tag-btn btn-pav fltr-controls" data-filter="outraorg">Outra</li>
+          </ul>
+
+          <ul class="multifilter">
+            <li class="tag-title" >Tema</li>            
+            <li class="tag-btn btn-pav fltr-controls" data-filter="eleicoes">Eleições</li>
+            <li class="tag-btn btn-pav fltr-controls" data-filter="imprensa">Imprensa</li>
+            <li class="tag-btn btn-pav fltr-controls" data-filter="juventude">Juventude</li>
+            <li class="tag-btn btn-pav fltr-controls" data-filter="rural">Mundo rural</li>
+            <li class="tag-btn btn-pav fltr-controls" data-filter="reformaagraria">Reforma Agrária</li> 
+            <li class="tag-btn btn-pav fltr-controls" data-filter="habitacao">Habitação</li>
+            <li class="tag-btn btn-pav fltr-controls" data-filter="cultura">Cultura</li>
+            <li class="tag-btn btn-pav fltr-controls" data-filter="desporto">Desporto</li>            
+            <li class="tag-btn btn-pav fltr-controls" data-filter="1demaio">1º de Maio</li> 
+            <li class="tag-btn btn-pav fltr-controls" data-filter="evento">Eventos</li> 
+            <li class="tag-btn btn-pav fltr-controls" data-filter="mulher">Mulher</li>
+            <li class="tag-btn btn-pav fltr-controls" data-filter="festaavante">Festa do Avante</li> 
+            <li class="tag-btn btn-pav fltr-controls" data-filter="individualidades">Individualidades</li>
+            <li class="tag-btn btn-pav fltr-controls" data-filter="internacional">Solidariedade internacional</li> 
+            <li class="tag-btn btn-pav fltr-controls" data-filter="outrotema">Outro</li> 
+          </ul>
         </div>
-        <div class="offcanvas-body">
-          <div class="accordion accordion-flush col-sm-12" id="accordionFlushExample">
+    </div>   
+  </header>
 
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                  Porquê?
-                </button>
-              </h2>
-              <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">
-                  <p>Este projeto surgiu da vontade de contribuir para a preservação da memória da revolução portuguesa e divulgação da sua iconografia.</p>
-                </div>
-              </div>
-            </div>
 
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                  Como usar?
-                </button>
-              </h2>
-              <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">
-                  <p>Para visualizar, clique em cima da respetiva imagem na galeria. Em todos os autocolantes existe um link para descarregar uma versão com a melhor qualidade disponível.</p>
-                </div>
-              </div>
-            </div>
+  <main>
+    <section>
+    
+   
+<div class="row filtr-container">
 
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                  Direitos de Autor e Licenças
-                </button>
-              </h2>
-              <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">
-                  <p xmlns:cc="http://creativecommons.org/ns#" >Estas imagens são partilhadas sob licença <a href="https://creativecommons.org/publicdomain/zero/1.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC0 1.0 Universal<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/zero.svg?ref=chooser-v1" alt=""></a></p>                 
-                  <p>Isto significa que pode copiar, modificar, distribuir e executar o trabalho, mesmo para fins comerciais, tudo sem pedir autorização.</p>
-                </div>
-              </div>
-            </div>
+<a class="col image-link filtr-item" data-category="alverca, pioneiros, juventude" data-sort="teste" href="img/0001_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0001_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0001_jpg.jpeg" alt=""/></a>
+<a class="col image-link filtr-item" data-category="portugal, outraorg, imprensa" data-sort="teste" href="img/0002_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0002_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0002_jpg.jpeg" alt=""/></a>
+<a class="col image-link filtr-item" data-category="portugal, pcp, eleicoes" data-sort="teste"  href="img/0003_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0003_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0003_jpg.jpeg" alt=""/></a>
+<a class="col image-link filtr-item" data-category="setubal, pcp, rural" data-sort="teste"  href="img/0004_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0004_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0004_jpg.jpeg" alt=""/></a>
+<a class="col image-link filtr-item" data-category="tvedras, outraorg, juventude" data-sort="teste"  href="img/0005_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0005_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0005_jpg.jpeg" alt=""/></a>
+<a class="col image-link filtr-item" data-category="lisboa, cgtp, 1demaio, reformaagraria" data-sort="teste"  href="img/0006_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0006_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0006_jpg.jpeg" alt=""/></a>
+<a class="col image-link filtr-item" data-category="coimbra, outraorg, habitacao" data-sort="teste" href="img/0007_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0007_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0007_jpg.jpeg" alt=""/></a>
+<a class="col image-link filtr-item" data-category="portugal, cgtp, outrotema" data-sort="teste" href="img/0008_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0008_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0008_jpg.jpeg" alt=""/></a>
 
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-                  Quem fez?
-                </button>
-              </h2>
-              <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">
-                  <p>Os autocolantes foram recolhidos por Manuela Gonçalves e Nélson Gonçalves. O projeto foi desenvolvido e é mantido pela equipa do <a href="https://alfobre.com" class="alfobre-link" target="_blank">Alfobre.com</a>.</p>
-                  <p>Para dúvidas, contributos ou quaisquer outras questões, contacte-nos através de projeto.alfobre@gmail.com</p>
-                </div>
-              </div>
-            </div>
+<a class="col image-link filtr-item" data-category="lourinha, outraorg, 1demaio" href="img/0009_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0009_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0009_jpg.jpeg" alt=""/></a>
+<a class="col image-link filtr-item" data-category="barreiro, pcp, outrotema"  href="img/0010_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0010_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0010_jpg.jpeg" alt=""/></a>
+<a class="col image-link filtr-item" data-category="vfxira, outraorg, reformaagraria, campesinato"  href="img/0011_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0011_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0011_jpg.jpeg" alt=""/></a>
+<a class="col image-link filtr-item" data-category="amadora, alemanha, pcp, evento"  href="img/0012_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0012_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0012_jpg.jpeg" alt=""/></a>
+<a class="col image-link filtr-item" data-category="portugal, outraorg, imprensa" href="img/0013_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0013_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0013_jpg.jpeg" alt=""/></a>
+<a class="col image-link filtr-item" data-category="portugal, pcp, outrotema" href="img/0014_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0014_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0014_jpg.jpeg" alt=""/></a>
+<a class="col image-link filtr-item" data-category="portugal, outraorg, imprensa" href="img/0015_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0015_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0015_jpg.jpeg" alt=""/></a>
+<a class="col image-link filtr-item" data-category="portugal, cgtp, outrotema" href="img/0016_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0016_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0016_jpg.jpeg" alt=""/></a>
 
-          </div>
-        </div>
+<a class="col image-link filtr-item" data-category="lisboa, pcp, outrotema" href="img/0017_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0017_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0017_jpg.jpeg" alt=""/></a>
+<a class="col image-link filtr-item" data-category="semlocal, outraorg, internacional" href="img/0018_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0018_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0018_jpg.jpeg" alt=""/></a>
+<a class="col image-link filtr-item" data-category="lisboa, pcp, evento" href="img/0019_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0019_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0019_jpg.jpeg" alt=""/></a>
+<a class="col image-link filtr-item" data-category="lisboa, pcp, eleicoes" href="img/0020_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0020_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0020_jpg.jpeg" alt=""/></a>
+<a class="col image-link filtr-item" data-category="semlocal, outraorg, individualidades" href="img/0021_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0021_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0021_jpg.jpeg" alt=""/></a>
+<a class="col image-link filtr-item" data-category="portugal, pcp, outrotema" href="img/0022_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0022_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0022_jpg.jpeg" alt=""/></a>
+<a class="col image-link filtr-item" data-category="lisboa, pcp, outrotema" href="img/0023_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0023_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0023_jpg.jpeg" alt=""/></a>
+<a class="col image-link filtr-item" data-category="portugal, cgtp, evento" href="img/0024_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0024_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0024_jpg.jpeg" alt=""/></a>
 
-        <div class="offcanvas-footer container">
-          <p class="text-muted text-end"><small>2024 | <a href="https://alfobre.com" class="alfobre-link" target="_blank">Alfobre.com</a></small></p>
+<a class="col image-link filtr-item" data-category="tvedras, outraorg, outrotema" href="img/0025_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0025_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0025_jpg.jpeg" alt=""/></a>
+<a class="col image-link filtr-item" data-category="tvedras, cgtp, 1demaio" href="img/0026_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0026_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0026_jpg.jpeg" alt=""/></a>
+<a class="col image-link filtr-item" data-category="tvedras, cgtp, 1demaio" href="img/0027_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0027_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0027_jpg.jpeg" alt=""/></a>
+<a class="col image-link filtr-item" data-category="beja, pcp, evento" href="img/0028_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0028_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0028_jpg.jpeg" alt=""/></a>
+<a class="col image-link filtr-item" data-category="semlocal, outraorg, internacional" href="img/0029_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0029_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0029_jpg.jpeg" alt=""/></a>
+<a class="col image-link filtr-item" data-category="portugal, pcp, festaavante" href="img/0030_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0030_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0030_jpg.jpeg" alt=""/></a>
+<a class="col image-link filtr-item" data-category="almada, pcp, outrotema" href="img/0031_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0031_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0031_jpg.jpeg" alt=""/></a>
+<a class="col image-link filtr-item" data-category="portugal, pcp, eleicoes" href="img/0032_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0032_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0032_jpg.jpeg" alt=""/></a>
 
-        </div>
-      </div>
-    </div>
-  </nav>
+<a class="col image-link filtr-item" data-category="sobralma, pcp, outrotema" href="img/0033_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0033_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0033_jpg.jpeg" alt=""/></a>
+<a class="col image-link filtr-item" data-category="portugal, pcp, outrotema" href="img/0034_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0034_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0034_jpg.jpeg" alt=""/></a>
+<a class="col image-link filtr-item" data-category="semlocal, outraorg, internacional" href="img/0035_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0035_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0035_jpg.jpeg" alt=""/></a>
+<a class="col image-link filtr-item" data-category="odivelas, pcp, outrotema" href="img/0036_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0036_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0036_jpg.jpeg" alt=""/></a>
+<a class="col image-link filtr-item" data-category="lisboa, pcp, evento" href="img/0037_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0037_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0037_jpg.jpeg" alt=""/></a>
+<a class="col image-link filtr-item" data-category="portugal, pcp, festaavante" href="img/0038_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0038_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0038_jpg.jpeg" alt=""/></a>
+<a class="col image-link filtr-item" data-category="semlocal, outraorg, internacional, imprensa" href="img/0039_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0039_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0039_jpg.jpeg" alt=""/></a>
+<a class="col image-link filtr-item" data-category="tvedras, pcp, outrotema" href="img/0040_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0040_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0040_jpg.jpeg" alt=""/></a>
 
-<section>
+<a class="col image-link filtr-item" data-category="sintra, pioneiros, juventude" href="img/0041_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0041_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0041_jpg.jpeg" alt=""/></a>
+<a class="col image-link filtr-item" data-category="alenquer, pcp, outrotema" href="img/0042_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0042_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0042_jpg.jpeg" alt=""/></a>
+<a class="col image-link filtr-item" data-category="almada, outraorg, internacional" href="img/0043_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0043_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0043_jpg.jpeg" alt=""/></a>
+<a class="col image-link filtr-item" data-category="portugal, pcp, eleicoes" href="img/0044_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0044_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0044_jpg.jpeg" alt=""/></a>
+<a class="col image-link filtr-item" data-category="portugal, pcp, outrotema" href="img/0045_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0045_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0045_jpg.jpeg" alt=""/></a>
+<a class="col image-link filtr-item" data-category="portugal, pcp, eleicoes" href="img/0046_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0046_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0046_jpg.jpeg" alt=""/></a>
+<a class="col image-link filtr-item" data-category="alverca, ujc, outrotema" href="img/0047_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0047_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0047_jpg.jpeg" alt=""/></a>
+<a class="col image-link filtr-item" data-category="espinho, pcp, outrotema" href="img/0048_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0048_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0048_jpg.jpeg" alt=""/></a>
 
-<div class="container-fluid fix">
+<a class="col image-link filtr-item" data-category="lisboa, pcp, outrotema" href="img/0049_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0049_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0049_jpg.jpeg" alt=""/></a>
+<a class="col image-link filtr-item" data-category="semlocal, outraorg, internacional" href="img/0050_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0050_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0050_jpg.jpeg" alt=""/></a>
+<a class="col image-link filtr-item" data-category="setubal, pcp, outrotema" href="img/0051_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0051_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0051_jpg.jpeg" alt=""/></a>
+<a class="col image-link filtr-item" data-category="lisboa, pcp, outrotema" href="img/0052_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0052_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0052_jpg.jpeg" alt=""/></a>
+<a class="col image-link filtr-item" data-category="castelobranco, pcp, outrotema" href="img/0053_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0053_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0053_jpg.jpeg" alt=""/></a>
+<a class="col image-link filtr-item" data-category="barreiro, pcp, reformaagraria" href="img/0054_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0054_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0054_jpg.jpeg" alt=""/></a>
+<a class="col image-link filtr-item" data-category="portugal, pcp, reformaagraria" href="img/0055_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0055_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0055_jpg.jpeg" alt=""/></a>
+<a class="col image-link filtr-item" data-category="portugal, pcp, evento" href="img/0056_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0056_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0056_jpg.jpeg" alt=""/></a>
 
-<a class="image-link btn" href="img/0001_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0001_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0001_jpg.jpeg" alt=""/></a>
-<a class="image-link btn" href="img/0002_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0002_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0002_jpg.jpeg" alt=""/></a>
-<a class="image-link btn" href="img/0003_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0003_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0003_jpg.jpeg" alt=""/></a>
-<a class="image-link btn" href="img/0004_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0004_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0004_jpg.jpeg" alt=""/></a>
-<a class="image-link btn" href="img/0005_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0005_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0005_jpg.jpeg" alt=""/></a>
-<a class="image-link btn" href="img/0006_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0006_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0006_jpg.jpeg" alt=""/></a>
-<a class="image-link btn" href="img/0007_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0007_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0007_jpg.jpeg" alt=""/></a>
-<a class="image-link btn" href="img/0008_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0008_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0008_jpg.jpeg" alt=""/></a>
-<a class="image-link btn" href="img/0009_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0009_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0009_jpg.jpeg" alt=""/></a>
-<a class="image-link btn" href="img/0010_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0010_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0010_jpg.jpeg" alt=""/></a>
-<a class="image-link btn" href="img/0011_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0011_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0011_jpg.jpeg" alt=""/></a>
-<a class="image-link btn" href="img/0012_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0012_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0012_jpg.jpeg" alt=""/></a>
-<a class="image-link btn" href="img/0013_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0013_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0013_jpg.jpeg" alt=""/></a>
-<a class="image-link btn" href="img/0014_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0014_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0014_jpg.jpeg" alt=""/></a>
-<a class="image-link btn" href="img/0015_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0015_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0015_jpg.jpeg" alt=""/></a>
-<a class="image-link btn" href="img/0016_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0016_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0016_jpg.jpeg" alt=""/></a>
-<a class="image-link btn" href="img/0017_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0017_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0017_jpg.jpeg" alt=""/></a>
-<a class="image-link btn" href="img/0018_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0018_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0018_jpg.jpeg" alt=""/></a>
-<a class="image-link btn" href="img/0019_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0019_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0019_jpg.jpeg" alt=""/></a>
-<a class="image-link btn" href="img/0020_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0020_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0020_jpg.jpeg" alt=""/></a>
-<a class="image-link btn" href="img/0021_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0021_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0021_jpg.jpeg" alt=""/></a>
-<a class="image-link btn" href="img/0022_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0022_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0022_jpg.jpeg" alt=""/></a>
-<a class="image-link btn" href="img/0023_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0023_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0023_jpg.jpeg" alt=""/></a>
-<a class="image-link btn" href="img/0024_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0024_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0024_jpg.jpeg" alt=""/></a>
-<a class="image-link btn" href="img/0025_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0025_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0025_jpg.jpeg" alt=""/></a>
-<a class="image-link btn" href="img/0026_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0026_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0026_jpg.jpeg" alt=""/></a>
-<a class="image-link btn" href="img/0027_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0027_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0027_jpg.jpeg" alt=""/></a>
-<a class="image-link btn" href="img/0028_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0028_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0028_jpg.jpeg" alt=""/></a>
-<a class="image-link btn" href="img/0029_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0029_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0029_jpg.jpeg" alt=""/></a>
-<a class="image-link btn" href="img/0030_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0030_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0030_jpg.jpeg" alt=""/></a>
-<a class="image-link btn" href="img/0031_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0031_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0031_jpg.jpeg" alt=""/></a>
-<a class="image-link btn" href="img/0032_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0032_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0032_jpg.jpeg" alt=""/></a>
-<a class="image-link btn" href="img/0033_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0033_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0033_jpg.jpeg" alt=""/></a>
-<a class="image-link btn" href="img/0034_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0034_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0034_jpg.jpeg" alt=""/></a>
-<a class="image-link btn" href="img/0035_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0035_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0035_jpg.jpeg" alt=""/></a>
-<a class="image-link btn" href="img/0036_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0036_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0036_jpg.jpeg" alt=""/></a>
-<a class="image-link btn" href="img/0037_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0037_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0037_jpg.jpeg" alt=""/></a>
-<a class="image-link btn" href="img/0038_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0038_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0038_jpg.jpeg" alt=""/></a>
-<a class="image-link btn" href="img/0039_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0039_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0039_jpg.jpeg" alt=""/></a>
-<a class="image-link btn" href="img/0040_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0040_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0040_jpg.jpeg" alt=""/></a>
-<a class="image-link btn" href="img/0041_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0041_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0041_jpg.jpeg" alt=""/></a>
-<a class="image-link btn" href="img/0042_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0042_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0042_jpg.jpeg" alt=""/></a>
-<a class="image-link btn" href="img/0043_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0043_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0043_jpg.jpeg" alt=""/></a>
-<a class="image-link btn" href="img/0044_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0044_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0044_jpg.jpeg" alt=""/></a>
-<a class="image-link btn" href="img/0045_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0045_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0045_jpg.jpeg" alt=""/></a>
-<a class="image-link btn" href="img/0046_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0046_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0046_jpg.jpeg" alt=""/></a>
-<a class="image-link btn" href="img/0047_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0047_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0047_jpg.jpeg" alt=""/></a>
-<a class="image-link btn" href="img/0048_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0048_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0048_jpg.jpeg" alt=""/></a>
-<a class="image-link btn" href="img/0049_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0049_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0049_jpg.jpeg" alt=""/></a>
-<a class="image-link btn" href="img/0050_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0050_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0050_jpg.jpeg" alt=""/></a>
-<a class="image-link btn" href="img/0051_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0051_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0051_jpg.jpeg" alt=""/></a>
-<a class="image-link btn" href="img/0052_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0052_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0052_jpg.jpeg" alt=""/></a>
-<a class="image-link btn" href="img/0053_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0053_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0053_jpg.jpeg" alt=""/></a>
-<a class="image-link btn" href="img/0054_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0054_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0054_jpg.jpeg" alt=""/></a>
-<a class="image-link btn" href="img/0055_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0055_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0055_jpg.jpeg" alt=""/></a>
-<a class="image-link btn" href="img/0056_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0056_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0056_jpg.jpeg" alt=""/></a>
-<a class="image-link btn" href="img/0057_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0057_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0057_jpg.jpeg" alt=""/></a>
-<a class="image-link btn" href="img/0058_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0058_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0058_jpg.jpeg" alt=""/></a>
-<a class="image-link btn" href="img/0059_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0059_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0059_jpg.jpeg" alt=""/></a>
-<a class="image-link btn" href="img/0060_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0060_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0060_jpg.jpeg" alt=""/></a>
-<a class="image-link btn" href="img/0061_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0061_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0061_jpg.jpeg" alt=""/></a>
-<a class="image-link btn" href="img/0062_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0062_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0062_jpg.jpeg" alt=""/></a>
-<a class="image-link btn" href="img/0063_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0063_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0063_jpg.jpeg" alt=""/></a>
-<a class="image-link btn" href="img/0064_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0064_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0064_jpg.jpeg" alt=""/></a>
-<a class="image-link btn" href="img/0065_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0065_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0065_jpg.jpeg" alt=""/></a>
-<a class="image-link btn" href="img/0066_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0066_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0066_jpg.jpeg" alt=""/></a>
-<a class="image-link btn" href="img/0067_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0067_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0067_jpg.jpeg" alt=""/></a>
-<a class="image-link btn" href="img/0068_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0068_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0068_jpg.jpeg" alt=""/></a>
-<a class="image-link btn" href="img/0069_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0069_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0069_jpg.jpeg" alt=""/></a>
-<a class="image-link btn" href="img/0070_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0070_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0070_jpg.jpeg" alt=""/></a>
-<a class="image-link btn" href="img/0071_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0071_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0071_jpg.jpeg" alt=""/></a>
-<a class="image-link btn" href="img/0072_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0072_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0072_jpg.jpeg" alt=""/></a>
-<a class="image-link btn" href="img/0073_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0073_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0073_jpg.jpeg" alt=""/></a>
-<a class="image-link btn" href="img/0074_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0074_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0074_jpg.jpeg" alt=""/></a>
-<a class="image-link btn" href="img/0075_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0075_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0075_jpg.jpeg" alt=""/></a>
-<a class="image-link btn" href="img/0076_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0076_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0076_jpg.jpeg" alt=""/></a>
-<a class="image-link btn" href="img/0077_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0077_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0077_jpg.jpeg" alt=""/></a>
-<a class="image-link btn" href="img/0078_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0078_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0078_jpg.jpeg" alt=""/></a>
-<a class="image-link btn" href="img/0079_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0079_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0079_jpg.jpeg" alt=""/></a>
-<a class="image-link btn" href="img/0080_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0080_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0080_jpg.jpeg" alt=""/></a>
-<a class="image-link btn" href="img/0081_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0081_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0081_jpg.jpeg" alt=""/></a>
-<a class="image-link btn" href="img/0082_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0082_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0082_jpg.jpeg" alt=""/></a>
-<a class="image-link btn" href="img/0083_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0083_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0083_jpg.jpeg" alt=""/></a>
-<a class="image-link btn" href="img/0084_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0084_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0084_jpg.jpeg" alt=""/></a>
-<a class="image-link btn" href="img/0085_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0085_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0085_jpg.jpeg" alt=""/></a>
-<a class="image-link btn" href="img/0086_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0086_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0086_jpg.jpeg" alt=""/></a>
+<a class="col image-link filtr-item" data-category="semlocal, outraorg, individualidades" href="img/0057_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0057_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0057_jpg.jpeg" alt=""/></a>
+<a class="col image-link filtr-item" data-category="portugal, outraorg, reformaagraria" href="img/0058_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0058_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0058_jpg.jpeg" alt=""/></a>
+<a class="col image-link filtr-item" data-category="amadora, pcp, outrotema" href="img/0059_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0059_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0059_jpg.jpeg" alt=""/></a>
+<a class="col image-link filtr-item" data-category="portugal, uec, outrotema" href="img/0060_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0060_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0060_jpg.jpeg" alt=""/></a>
+<a class="col image-link filtr-item" data-category="semlocal, outraorg, internacional, mulher" href="img/0061_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0061_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0061_jpg.jpeg" alt=""/></a>
+<a class="col image-link filtr-item" data-category="portugal, outraorg, imprensa" href="img/0062_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0062_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0062_jpg.jpeg" alt=""/></a>
+<a class="col image-link filtr-item" data-category="sintra, outraorg, rural" href="img/0063_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0063_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0063_jpg.jpeg" alt=""/></a>
+<a class="col image-link filtr-item" data-category="tvedras, pioneiros, juventude" href="img/0064_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0064_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0064_jpg.jpeg" alt=""/></a>
+
+<a class="col image-link filtr-item" data-category="lisboa, pcp, outrotema" href="img/0065_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0065_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0065_jpg.jpeg" alt=""/></a>
+<a class="col image-link filtr-item" data-category="portugal, outraorg, outrotema" href="img/0066_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0066_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0066_jpg.jpeg" alt=""/></a>
+<a class="col image-link filtr-item" data-category="portugal, outraorg, imprensa" href="img/0067_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0067_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0067_jpg.jpeg" alt=""/></a>
+<a class="col image-link filtr-item" data-category="portugal, outraorg, cultura" href="img/0068_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0068_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0068_jpg.jpeg" alt=""/></a>
+<a class="col image-link filtr-item" data-category="tvedras, ujc, desporto" href="img/0069_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0069_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0069_jpg.jpeg" alt=""/></a>
+<a class="col image-link filtr-item" data-category="tvedras, pcp, outrotema" href="img/0070_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0070_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0070_jpg.jpeg" alt=""/></a>
+<a class="col image-link filtr-item" data-category="oeiras, pcp, outrotema" href="img/0071_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0071_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0071_jpg.jpeg" alt=""/></a>
+<a class="col image-link filtr-item" data-category="portugal, pcp, outrotema" href="img/0072_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0072_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0072_jpg.jpeg" alt=""/></a>
+
+<a class="col image-link filtr-item" data-category="lisboa, cgtp, evento" href="img/0073_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0073_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0073_jpg.jpeg" alt=""/></a>
+<a class="col image-link filtr-item" data-category="tvedras, cgtp, outrotema" href="img/0074_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0074_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0074_jpg.jpeg" alt=""/></a>
+<a class="col image-link filtr-item" data-category="povoavarzim, pcp, outrotema" href="img/0075_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0075_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0075_jpg.jpeg" alt=""/></a>
+<a class="col image-link filtr-item" data-category="tvedras, outraorg, outrotema" href="img/0076_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0076_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0076_jpg.jpeg" alt=""/></a>
+<a class="col image-link filtr-item" data-category="portugal, uec, outrotema" href="img/0077_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0077_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0077_jpg.jpeg" alt=""/></a>
+<a class="col image-link filtr-item" data-category="portugal, outraorg, outrotema" href="img/0078_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0078_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0078_jpg.jpeg" alt=""/></a>
+<a class="col image-link filtr-item" data-category="semlocal, outraorg, internacional" href="img/0079_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0079_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0079_jpg.jpeg" alt=""/></a>
+<a class="col image-link filtr-item" data-category="tvedras, outraorg, cultura" href="img/0080_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0080_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0080_jpg.jpeg" alt=""/></a>
+
+<a class="col image-link filtr-item" data-category="portugal, outraorg, internacional" href="img/0081_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0081_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0081_jpg.jpeg" alt=""/></a>
+<a class="col image-link filtr-item" data-category="lisboa, pcp, outrotema" href="img/0082_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0082_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0082_jpg.jpeg" alt=""/></a>
+<a class="col image-link filtr-item" data-category="portugal, outraorg, outrotema" href="img/0083_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0083_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0083_jpg.jpeg" alt=""/></a>
+<a class="col image-link filtr-item" data-category="tvedras, cgtp, 1demaio" href="img/0084_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0084_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0084_jpg.jpeg" alt=""/></a>
+<a class="col image-link filtr-item" data-category="portugal, outraorg, individualidades" href="img/0085_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0085_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0085_jpg.jpeg" alt=""/></a>
+<a class="col image-link filtr-item" data-category="seixal, cgtp, evento" href="img/0086_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0086_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0086_jpg.jpeg" alt=""/></a>
+<a class="col image-link filtr-item" data-category="portugal, ujc, outrotema" href="img/0087_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0087_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0087_jpg.jpeg" alt=""/></a>
+<a class="col image-link filtr-item" data-category="portugal, outraorg, outrotema" href="img/0088_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0088_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0088_jpg.jpeg" alt=""/></a>
+
+<a class="col image-link filtr-item" data-category="lisboa, cgtp, 1demaio" href="img/0089_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0089_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0089_jpg.jpeg" alt=""/></a>
+<a class="col image-link filtr-item" data-category="portugal, pcp, outrotema" href="img/0090_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0090_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0090_jpg.jpeg" alt=""/></a>
+<a class="col image-link filtr-item" data-category="portugal, pcp, outrotema" href="img/0091_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0091_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0091_jpg.jpeg" alt=""/></a>
+<a class="col image-link filtr-item" data-category="portugal, pcp, outrotema" href="img/0092_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0092_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0092_jpg.jpeg" alt=""/></a>
+<a class="col image-link filtr-item" data-category="portugal, pcp, outrotema" href="img/0093_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0093_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0093_jpg.jpeg" alt=""/></a>
+<a class="col image-link filtr-item" data-category="portugal, pcp, outrotema" href="img/0094_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0094_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0094_jpg.jpeg" alt=""/></a>
+<a class="col image-link filtr-item" data-category="alverca, pcp, outrotema" href="img/0095_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0095_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0095_jpg.jpeg" alt=""/></a>
+<a class="col image-link filtr-item" data-category="portugal, outraorg, outrotema" href="img/0096_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0096_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0096_jpg.jpeg" alt=""/></a>
+
+<a class="col image-link filtr-item" data-category="semlocal, outraorg, internacional, individualidades" href="img/0097_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0097_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0097_jpg.jpeg" alt=""/></a>
+<a class="col image-link filtr-item" data-category="lisboa, pcp, individualidades" href="img/0098_jpg.jpeg" data-lightbox="example-set" data-title="<a target='_blank' href='originals/original_0098_jpg.jpeg'>Download de versão com melhor qualidade</a>"><img class="example-image" src="thumbs/thumb_0098_jpg.jpeg" alt=""/></a>
+
+
+  </div> <!-- fim de filtr-container -->
 
 
 
-    </div>
-  </section>
+</section>
+</main>
 
-  
-  <section>
-    <p>     
-    </p>
-  </section>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <footer class="">
+    <p class="right" style="padding-right: 2em;"><small>2024 | <a href="https://alfobre.com" class="alfobre-link" target="_blank">Alfobre.com</a></small></p>
+  </footer>
+
   <script src="js/lightbox-plus-jquery.min.js"></script>
+  <script src="js/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script src="js/init.js"></script>
 
-  <!-- <script src="../bower_components/jquery/dist/jquery.js"></script>
-  <script src="../src/js/lightbox.js"></script> -->
+  <script type="text/javascript" src="js/vanilla.filterizr.min.js"></script>
   
- 
+  <script type="text/javascript">
+    const multiFilters = document.querySelectorAll('.multifilter li');
+    Array.from(multiFilters).forEach((node) =>
+      node.addEventListener('click', function() {
+        node.classList.toggle('active');
+      })
+    );
+    // Expose this filterizr as a global for debugging
+    window.filterizr = new window.Filterizr('.filtr-container', {
+      animationDuration: 0.5,
+      controlsSelector: '.fltr-controls',
+      gutterPixels: 2,
+      spinner: {
+        enabled: true,
+        fillColor: '#d29f13',
+        styles: {
+          height: '200px',
+          margin: '0 auto',
+          width: '200px',
+          'z-index': 2,
+        },
+      },
+    });
+
+  </script>
+  
 
 </body>
 </html>
