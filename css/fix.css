@@ -61,3 +61,11 @@ nav.black-text {
   margin-top: 0;
   z-index: 997;
 }
+
+.sidebarfooter{margin-left: 1em;position: absolute;bottom: 60px;}
+.example-image{width: 200px !important; height: 200px !important;}
+
+@media only screen and (max-width: 440px) {
+  .example-image{width: 150px !important; height: 150px !important}
+  
+}
